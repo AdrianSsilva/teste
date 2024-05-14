@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
  class Pokemon {
     
@@ -16,6 +17,7 @@ import java.util.Scanner;
     }
 public class Main{
 public static void main(String[] args){
+            //ArrayList<String>lista = new ArrayList<String>();
             Scanner ler = new Scanner(System.in);
             System.out.println("Qual o nome do seu Pokemon?");
             var nome = ler.nextLine();
@@ -23,5 +25,6 @@ public static void main(String[] args){
             var tipo = ler.nextLine();
             Pokemon pokemon = new Pokemon(nome, tipo);
             pokemon.Falar();
+            //lista.add(nome. tipo);
         }
 }
