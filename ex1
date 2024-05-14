@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+ class Pokemon {
+    
+    public String nome;
+    public String tipo;
+    
+    public Pokemon(String nome, String tipo){
+        
+        this.nome = nome;
+        this.tipo = tipo;
+    }
+    public void Falar(){
+        System.out.println("Eu sou o " + nome + " do tipo " + tipo);
+    }
+    }
+public class Main{
+public static void main(String[] args){
+            Scanner ler = new Scanner(System.in);
+            System.out.println("Qual o nome do seu Pokemon?");
+            var nome = ler.nextLine();
+            System.out.println("Qual o tipo do seu Pokemon?");
+            var tipo = ler.nextLine();
+            Pokemon pokemon = new Pokemon(nome, tipo);
+            pokemon.Falar();
+        }
+}
